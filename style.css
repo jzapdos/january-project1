@@ -1,0 +1,167 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.page-section {
+    scroll-margin-top: 53px;
+}
+
+#navbar {
+    transition: 0.3s ease;
+    background-color: #5789a0;
+
+    button.navbar-toggler {
+        border: none;
+        box-shadow: none;
+    }
+
+    .nav-link.active {
+        color: var(--highlight);
+    }
+    .nav-link:hover {
+        color: #fff;
+    }
+}
+
+.navbar.scrolled {
+    background: rgba(104, 227, 248, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.home1 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('image/jan-bg-2.jpg') center center / cover no-repeat;
+    height: 100vh;
+    width: 100%; 
+
+    .text2{
+        font-weight: bold;
+        color:white;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .title{
+        font-weight: bold;
+        color:white;
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+    .button {
+        position: absolute;
+        bottom: 20px; 
+        right: 30px; 
+    }
+    
+    .button button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+.information {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 300px; 
+    padding: 20px;
+    height: 67vh;
+    width: 100%; 
+    overflow:hidden;
+
+    .text {
+        flex: 1; 
+        padding-right: 40px; 
+        padding-left:50px;
+    }
+    
+    .image {
+        flex: 1; 
+        background-size: cover;
+        height: 300px;
+        border-radius: 10px; 
+        align-items: center;
+        display:flex;
+        justify-content: center;
+
+
+        img{
+            width:400px;
+
+        }
+    }
+
+    .button {
+        position: absolute;
+        bottom: 20px; 
+        right: 30px; 
+    }
+
+    .button-left {
+        position:absolute;
+        bottom:20px;
+        left:30px;
+    }
+
+    .button button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .button-left button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+footer .text {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .text p.company {
+    color:rgb(80, 78, 78);
+}
+
+footer .text a,
+footer .text p.copyright {
+    text-decoration: none;
+    color: #494848;
+}
+
+footer .text a:hover {
+    color: white;
+    text-decoration: underline;
+}
